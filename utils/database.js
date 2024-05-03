@@ -14,7 +14,7 @@ export const connectToDB = async () => {
     await mongoose.connect(
       process.env.MONGODB_URI
         ? process.env.MONGODB_URI
-        : "https://localhost:3000",
+        : "mongodb://localhost:3000",
       {
         dbName: "share_prompt",
         useNewUrlParser: true,
